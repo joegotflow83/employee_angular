@@ -9,3 +9,10 @@
 (keyup.enter)="addEmployee(newEmployee.value)" (blur)="addEmployee(newEmployee.value);
 newEmployee.value=''">
 <button (click)="addEmployee(newEmployee.value)">Add Employee</button>
+<img src="{{ imageUrl }}" style="height:130px">
+<span [hidden]="isValid">This field is required</span>
+<button [style.color]="isSpecial ? 'red':'green'">Submit</button><br><br>
+<input type="text" placeholder="Enter Last Name" [(ngModel)]="firstName">
+<input type="text" placeholder="Enter Last Name" [(ngModel)]="lastName">
+{{ firstName }}
+{{ lastName }}

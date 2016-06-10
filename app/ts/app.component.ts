@@ -22,4 +22,13 @@ export class AppComponent {
             );
         }
     }
+
+    constructor() {
+        this.imageUrl = "http://www.trackmyfone.com/blog/wp-content/uploads/2015/10/empower-employee-TMF.jpg";
+        this.isValid = false;
+        this.isSpecial = true;
+    }
+
+    firstName: string;
+    lastName: string;
 }
