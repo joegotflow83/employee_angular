@@ -11,8 +11,15 @@ export class AppComponent {
     employees = [
         new Employee(1, 'Tom'),
         new Employee(2, 'John'),
-        new Employee(2, 'Mark'),
-        new Employee(2, 'Tim'),
+        new Employee(3, 'Mark'),
+        new Employee(4, 'Tim'),
     ];
     faveEmployee = this.employees[0];
+
+    addEmployee(newEmployee:string) {
+        if (newEmployee) {
+            this.employees.push(new Employee(5, newEmployee);
+            );
+        }
+    }
 }
